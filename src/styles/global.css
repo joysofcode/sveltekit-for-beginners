@@ -1,0 +1,131 @@
+/* Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--font-serif: 'Inter', sans-serif;
+	--font-16: 1.6rem;
+	--font-18: 1.8rem;
+	--font-24: 2.4rem;
+	--font-32: 3.2rem;
+	--font-80: 8rem;
+
+	--spacing-4: 0.4rem;
+	--spacing-8: 0.5rem;
+	--spacing-16: 1.6rem;
+	--spacing-20: 2rem;
+	--spacing-24: 2.4rem;
+	--spacing-32: 3.2rem;
+
+	--color-brand: hsl(204 88% 53%);
+	--color-text-primary: hsl(0 0% 98%);
+	--color-text-muted: hsl(210 34% 80%);
+	--color-bg-primary: hsl(210 34% 13%);
+	--color-bg-secondary: hsl(209, 35%, 15%);
+	--color-btn-primary-active: var(--color-brand);
+	--color-btn-primary-active-hover: hsl(204 88% 60%);
+	--color-btn-primary-inactive: hsl(205 70% 33%);
+	--color-btn-secondary: hsl(192 19% 95%);
+	--color-border-primary: hsl(0, 0%, 34%);
+	--color-link-hover: hsl(209 22% 19%);
+	--color-placeholder: hsl(210 34% 80%);
+
+	--radius-base: 2.4rem;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-brand);
+	border-radius: var(--radius-base);
+}
+
+html {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--font-serif);
+	font-size: var(--font-18);
+	color: var(--color-text-primary);
+	background-color: var(--color-bg-primary);
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text-primary);
+}
+
+label {
+	display: block;
+	margin: var(--spacing-8) 0;
+	font-size: var(--font-24);
+	color: var(--color-text-muted);
+}
+
+input {
+	padding: var(--spacing-16);
+	font-size: var(--font-24);
+	border-radius: var(--radius-base);
+	border: none;
+}
+
+.btn {
+	padding: var(--spacing-16) var(--spacing-32);
+	font-size: var(--font-18);
+	font-weight: bold;
+	color: var(--color-text-primary);
+	background-color: var(--color-btn-primary-active);
+	border-radius: var(--radius-base);
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: var(--color-btn-primary-active-hover);
+}
+
+.btn:disabled {
+	color: var(--color-text-muted);
+	background-color: var(--color-btn-primary-inactive);
+	cursor: not-allowed;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* Utils */
+
+.responsive {
+	resize: both;
+	overflow: scroll;
+	border: 1px solid hsl(0 0% 0%);
+}
+
+.placeholder {
+	padding: var(--spacing-20) 0;
+	background-color: var(--color-placeholder);
+	border-radius: var(--radius-base);
+}
