@@ -14,6 +14,27 @@ git clone https://github.com/joysofcode/sveltekit-for-beginners.git
 npm i
 ```
 
+🌱 Create and seed the Prisma database
+
+Rename `.env.example` to `.env`
+
+```
+DATABASE_URL="file:./dev.db"
+```
+
+Create the database from the Prisma schema
+
+```sh
+npx prisma db push
+```
+
+Seed the database
+
+```sh
+npx prisma db seed
+```
+
+
 🦄 Start the project and open http://localhost:3000/
 
 ```sh
