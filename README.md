@@ -34,6 +34,11 @@ Seed the database
 npx prisma db seed
 ```
 
+🔎 Inspect your database with Prisma Studio
+
+```
+pnpx prisma studio
+```
 
 🦄 Start the project and open http://localhost:3000/
 
