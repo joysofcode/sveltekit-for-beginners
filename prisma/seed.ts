@@ -13,7 +13,7 @@ export function randomUrl(): string {
 // database in the future
 export function randomDate(): string {
 	// this is set to one day
-	const offset = 24 * 60 * 60 * 1000 * 1
+	const offset = 60 * 60 * 24 * 1000
 
 	const current = new Date().getTime()
 	const random = Math.random() * offset
@@ -100,11 +100,11 @@ function getUsers() {
 }
 
 async function seed() {
-	await Promise.all(
-		getUsers().map((user) => {
-			return prisma.user.create({ data: user })
-		})
-	)
+	const users = getUsers()
+
+	for (const user of users) {
+		await prisma.user.create({ data: user })
+	}
 }
 
 seed()
