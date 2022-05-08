@@ -4,19 +4,19 @@ import path from 'path'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: preprocess(),
+  preprocess: preprocess(),
 
-	kit: {
-		adapter: adapter(),
-		vite: {
-			resolve: {
-				alias: {
-					$root: path.resolve('./src')
-				}
-			}
-		},
-		methodOverride: { allowed: ['DELETE'] }
-	}
+  kit: {
+    adapter: adapter(),
+    vite: {
+      resolve: {
+        alias: {
+          $root: path.resolve('./src'),
+        },
+      },
+    },
+    methodOverride: { allowed: ['DELETE'] },
+  },
 }
 
 export default config
