@@ -39,7 +39,7 @@ npx prisma db seed
 🔎 Inspect your database with Prisma Studio
 
 ```
-pnpx prisma studio
+npx prisma studio
 ```
 
 ## Development
