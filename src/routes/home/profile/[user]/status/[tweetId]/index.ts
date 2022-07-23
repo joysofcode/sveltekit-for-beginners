@@ -2,7 +2,7 @@ import type { RequestHandler } from '@sveltejs/kit'
 
 import { getTweet } from '$root/utils/prisma'
 
-export const get: RequestHandler = async ({ params }) => {
+export const GET: RequestHandler = async ({ params }) => {
 	const tweet = await getTweet(params)
 
 	if (!tweet) {

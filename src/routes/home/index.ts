@@ -6,7 +6,7 @@ import {
 	removeTweet,
 } from '$root/utils/prisma'
 
-export const get: RequestHandler = async () => {
+export const GET: RequestHandler = async () => {
 	const tweets = await getTweets()
 
 	if (!tweets) {
@@ -20,13 +20,15 @@ export const get: RequestHandler = async () => {
 	}
 }
 
-export const post: RequestHandler = async ({ request }) => {
+export const POST: RequestHandler = async ({ request }) => {
 	await createTweet(request)
 
 	return {}
 }
 
-export const del: RequestHandler = async ({ request }) => {
+export const DELETE: RequestHandler = async ({
+	request,
+}) => {
 	await removeTweet(request)
 
 	return {
