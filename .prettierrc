@@ -3,5 +3,12 @@
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "es5",
-	"printWidth": 60
+	"printWidth": 60,
+	"pluginSearchDirs": ["."],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": { "parser": "svelte" }
+		}
+	]
 }

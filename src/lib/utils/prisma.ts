@@ -1,5 +1,5 @@
-import prisma from '$root/lib/prisma'
-import { timePosted } from '$root/utils/date'
+import prisma from '$lib/database'
+import { timePosted } from '$lib/utils/date'
 
 export async function getTweets() {
 	const tweets = await prisma.tweet.findMany({

@@ -6,9 +6,6 @@ const config = {
 	preprocess: preprocess(),
 	kit: {
 		adapter: adapter(),
-		alias: {
-			$root: 'src',
-		},
 		methodOverride: { allowed: ['DELETE'] },
 	},
 }

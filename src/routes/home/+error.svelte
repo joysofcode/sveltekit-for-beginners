@@ -1,22 +1,9 @@
-<script lang="ts" context="module">
-	import type { Load } from '@sveltejs/kit'
-
-	export const load: Load = ({ error, status }) => {
-		return {
-			props: {
-				title: `${status}: ${error.message}`,
-			},
-		}
-	}
-</script>
-
-<script lang="ts">
-	export let title: string
+<script>
+	import { page } from '$app/stores'
 </script>
 
 <div class="error">
-	<h1>{title}</h1>
-
+	<h1>{$page.status}: {$page.error.message}</h1>
 	<img src="/dancing.webp" alt="Person dancing" />
 </div>
 

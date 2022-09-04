@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { enhance } from '$root/lib/form'
+	import { enhanceForm } from '$lib/actions/form'
 
 	let tweet = ''
 	let maxCharacters = 140
@@ -13,7 +13,7 @@
 		action="/home"
 		method="post"
 		autocomplete="off"
-		use:enhance={{ result: ({ form }) => form.reset() }}
+		use:enhanceForm={{ result: ({ form }) => form.reset() }}
 	>
 		<input
 			aria-label="Enter your Tweet"

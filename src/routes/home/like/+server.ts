@@ -1,14 +1,12 @@
-import type { RequestHandler } from '@sveltejs/kit'
-
-import { likeTweet } from '$root/utils/prisma'
+import { likeTweet } from '$lib/utils/prisma'
+import type { RequestHandler } from './$types'
 
 export const POST: RequestHandler = async ({ request }) => {
 	await likeTweet(request)
 
-	return {
-		status: 303,
+	return new Response(undefined, {
 		headers: {
 			location: '/home',
 		},
-	}
+	})
 }

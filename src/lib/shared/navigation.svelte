@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import Icon from '$root/components/icon.svelte'
+	import Icon from '$lib/shared/icon.svelte'
 
 	$: path = $page.url.pathname
 </script>
@@ -13,25 +13,28 @@
 					<a href="/" class="logo">🐦️</a>
 				</li>
 				<li class:active={path === '/home'}>
-					<a href="/home" sveltekit:prefetch>
+					<a href="/home" data-sveltekit-prefetch>
 						<Icon width="32" height="32" name="home" />
 						<span>Home</span>
 					</a>
 				</li>
 				<li class:active={path === '/home/profile/matia'}>
-					<a href="/home/profile/matia" sveltekit:prefetch>
+					<a
+						href="/home/profile/matia"
+						data-sveltekit-prefetch
+					>
 						<Icon width="32" height="32" name="profile" />
 						<span>Profile</span>
 					</a>
 				</li>
 				<li class:active={path === '/home/settings'}>
-					<a href="/home/settings" sveltekit:prefetch>
+					<a href="/home/settings" data-sveltekit-prefetch>
 						<Icon width="32" height="32" name="settings" />
 						<span>Settings</span>
 					</a>
 				</li>
 				<li class:active={path === '/home/about'}>
-					<a href="/home/about" sveltekit:prefetch>
+					<a href="/home/about" data-sveltekit-prefetch>
 						<Icon width="32" height="32" name="about" />
 						<span>About</span>
 					</a>

@@ -1,13 +1,3 @@
-<script context="module" lang="ts">
-	import { dev } from '$app/env'
-
-	// load JavaScript in development for hot module replacement
-	export const hydrate = dev
-
-	// prerender static page in production
-	export const prerender = true
-</script>
-
 <svelte:head>
 	<title>About</title>
 </svelte:head>

@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Compose from '$root/components/compose.svelte'
-	import Tweet from '$root/components/tweet.svelte'
-	import type { TweetType } from '$root/types'
+	import Compose from '$lib/shared/compose.svelte'
+	import Tweet from '$lib/shared/tweet.svelte'
+	import type { PageServerData } from './$types'
 
-	export let tweets: TweetType[] = []
+	export let data: PageServerData
 </script>
 
 <svelte:head>
@@ -14,7 +14,7 @@
 
 <Compose />
 
-{#each tweets as tweet (tweet.id)}
+{#each data.tweets as tweet (tweet.id)}
 	<Tweet {tweet} />
 {/each}
 
