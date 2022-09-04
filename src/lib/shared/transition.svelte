@@ -1,13 +1,14 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition'
 
-	export let url: URL
+	export let key: string
+	export let duration: number
 </script>
 
-{#key url}
+{#key key}
 	<div
-		in:fly={{ y: -50, duration: 250, delay: 300 }}
-		out:fly={{ y: -50, duration: 250 }}
+		in:fly={{ y: -50, duration, delay: duration }}
+		out:fly={{ y: 50, duration }}
 	>
 		<slot />
 	</div>

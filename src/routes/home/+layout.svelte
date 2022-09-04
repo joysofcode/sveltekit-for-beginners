@@ -1,18 +1,19 @@
 <script lang="ts">
-	import { page } from '$app/stores'
-
 	import Navigation from '$lib/shared/navigation.svelte'
 	import Trending from '$lib/shared/trending.svelte'
-	import Transition from '$lib/shared/transition.svelte'
+	import PageTransition from '$lib/shared/transition.svelte'
+	import type { PageData } from './$types'
+
+	export let data: PageData
 </script>
 
 <div class="container">
 	<Navigation />
-	<Transition url={$page.url}>
-		<main class="feed">
+	<main class="feed">
+		<PageTransition key={data.url} duration={300}>
 			<slot />
-		</main>
-	</Transition>
+		</PageTransition>
+	</main>
 	<Trending />
 </div>
 
