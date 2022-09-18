@@ -10,8 +10,8 @@
 <div class="compose">
 	<img src="/profile/matia/avatar.webp" alt="Avatar" />
 	<form
-		action="/home"
-		method="post"
+		action="?/createTweet"
+		method="POST"
 		autocomplete="off"
 		use:enhanceForm={{ result: ({ form }) => form.reset() }}
 	>

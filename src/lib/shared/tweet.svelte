@@ -78,7 +78,7 @@
 				</a>
 
 				<form
-					action="/home?_method=delete"
+					action="?/deleteTweet"
 					method="post"
 					use:enhanceForm
 				>
