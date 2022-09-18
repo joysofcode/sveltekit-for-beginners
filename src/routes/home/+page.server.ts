@@ -23,6 +23,5 @@ export const actions: Actions = {
 	},
 	deleteTweet: async ({ request }) => {
 		await removeTweet(request)
-		return { location: '/home' }
 	},
 }
