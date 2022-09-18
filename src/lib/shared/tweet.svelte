@@ -34,7 +34,7 @@
 
 			<div class="actions">
 				<form
-					action="/home/like"
+					action="?/likeTweet"
 					method="post"
 					use:enhanceForm
 				>

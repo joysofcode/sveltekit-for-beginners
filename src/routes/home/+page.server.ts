@@ -5,6 +5,7 @@ import {
 	createTweet,
 	getTweets,
 	removeTweet,
+	likeTweet,
 } from '$lib/utils/prisma'
 
 export const load: PageServerLoad = async () => {
@@ -23,5 +24,8 @@ export const actions: Actions = {
 	},
 	deleteTweet: async ({ request }) => {
 		await removeTweet(request)
+	},
+	likeTweet: async ({ request }) => {
+		await likeTweet(request)
 	},
 }
