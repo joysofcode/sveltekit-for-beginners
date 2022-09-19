@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition'
 
-	import { enhanceForm } from '$lib/actions/form'
+	import { enhance } from '$app/forms'
 	import Icon from '$lib/shared/icon.svelte'
 	import type { TweetType } from '$lib/types'
 
@@ -36,7 +36,7 @@
 				<form
 					action="?/likeTweet"
 					method="post"
-					use:enhanceForm
+					use:enhance
 				>
 					<input type="hidden" name="id" value={tweet.id} />
 					<button
@@ -80,7 +80,7 @@
 				<form
 					action="?/deleteTweet"
 					method="post"
-					use:enhanceForm
+					use:enhance
 				>
 					<input type="hidden" name="id" value={tweet.id} />
 					<button
