@@ -1,10 +1,11 @@
-import { error } from '@sveltejs/kit'
-import type { Action, PageServerLoad } from './$types'
+import { error, type Actions } from '@sveltejs/kit'
+import type { PageServerLoad } from './$types'
 
 import {
 	createTweet,
 	getTweets,
 	removeTweet,
+	likeTweet,
 } from '$lib/utils/prisma'
 
 export const load: PageServerLoad = async () => {
@@ -17,11 +18,14 @@ export const load: PageServerLoad = async () => {
 	return { tweets }
 }
 
-export const POST: Action = async ({ request }) => {
-	await createTweet(request)
-}
-
-export const DELETE: Action = async ({ request }) => {
-	await removeTweet(request)
-	return { location: '/home' }
+export const actions: Actions = {
+	createTweet: async ({ request }) => {
+		await createTweet(request)
+	},
+	deleteTweet: async ({ request }) => {
+		await removeTweet(request)
+	},
+	likeTweet: async ({ request }) => {
+		await likeTweet(request)
+	},
 }
