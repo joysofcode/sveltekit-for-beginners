@@ -1,5 +1,5 @@
-import { error, type Actions } from '@sveltejs/kit'
-import type { PageServerLoad } from './$types'
+import { error } from '@sveltejs/kit'
+import type { Actions, PageServerLoad } from './$types'
 
 import {
 	createTweet,

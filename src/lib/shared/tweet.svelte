@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade, fly } from 'svelte/transition'
-
 	import { enhance } from '$app/forms'
+
 	import Icon from '$lib/shared/icon.svelte'
 	import type { TweetType } from '$lib/types'
 
