@@ -111,29 +111,29 @@
 	}
 
 	button {
-		font-size: var(--font-16);
-		padding: var(--spacing-16);
+		font-size: var(--font-size-1);
+		padding: var(--size-2);
 	}
 
 	.tweet-container:hover {
-		background-color: var(--color-bg-secondary);
+		background-color: var(--black-2);
 	}
 
 	.tweet-container {
 		display: grid;
 		grid-template-columns: min-content 1fr;
-		gap: var(--spacing-16);
-		padding: var(--spacing-16) var(--spacing-24);
+		gap: var(--size-2);
+		padding: var(--size-2) var(--size-3);
 		transition: all 0.3s;
 	}
 
 	.tweet-container:not(:last-child) {
-		border-bottom: 1px solid var(--color-border-primary);
+		border-bottom: 1px solid var(--gray-2);
 	}
 
 	.tweet-details {
 		display: grid;
-		gap: var(--spacing-8);
+		gap: var(--size-1);
 	}
 
 	.user {
@@ -147,24 +147,24 @@
 
 	.handle,
 	.posted {
-		font-size: var(--font-16);
-		color: var(--color-text-muted);
+		font-size: var(--font-size-1);
+		color: var(--gray-1);
 	}
 
 	.content {
-		font-size: var(--font-16);
+		font-size: var(--font-size-1);
 	}
 
 	.actions {
 		display: flex;
-		gap: var(--spacing-32);
-		margin-top: var(--spacing-16);
+		gap: var(--size-4);
+		margin-top: var(--size-2);
 	}
 
 	.actions button,
 	.actions a {
 		padding: 0;
-		color: var(--color-text-muted);
+		color: var(--gray-1);
 		background: none;
 		transition: all 0.3s;
 	}
@@ -174,7 +174,7 @@
 		height: 24px;
 		display: grid;
 		place-content: center;
-		padding: var(--spacing-16);
+		padding: var(--size-2);
 		border-radius: 50%;
 		transition: all 0.3s;
 	}
@@ -220,7 +220,7 @@
 	}
 
 	.count {
-		margin-left: var(--spacing-16);
+		margin-left: var(--size-2);
 		font-size: 1.4rem;
 		font-weight: 400;
 		overflow: hidden;

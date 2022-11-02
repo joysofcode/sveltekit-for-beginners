@@ -15,21 +15,21 @@
 
 <style>
 	h1 {
-		font-size: var(--font-24);
+		font-size: var(--font-size-3);
 	}
 
 	p {
-		color: var(--color-text-muted);
+		color: var(--gray-1);
 	}
 
 	.container {
 		display: grid;
-		gap: var(--spacing-8);
-		padding: var(--spacing-16);
+		gap: var(--size-1);
+		padding: var(--size-2);
 	}
 
 	.content {
 		display: grid;
-		gap: var(--spacing-16);
+		gap: var(--size-2);
 	}
 </style>

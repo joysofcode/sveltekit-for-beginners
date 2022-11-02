@@ -34,21 +34,21 @@
 	}
 
 	.hero {
-		background-color: var(--color-brand);
+		background-color: var(--blue-0);
 		text-align: center;
 	}
 
 	.title {
-		font-size: var(--font-80);
+		font-size: var(--font-size-5);
 		z-index: 2;
 	}
 
 	.text {
-		padding: var(--spacing-16);
+		padding: var(--size-2);
 		transform: rotate(2deg) translateY(-40%);
-		background: var(--color-bg-primary);
+		background: var(--black-1);
 		font-weight: bold;
-		font-size: var(--font-24);
+		font-size: var(--font-size-3);
 		z-index: 1;
 	}
 

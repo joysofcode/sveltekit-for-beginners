@@ -22,8 +22,8 @@
 	h1 {
 		position: sticky;
 		top: 0;
-		padding: var(--spacing-8) var(--spacing-24);
-		font-size: var(--font-24);
+		padding: var(--size-1) var(--size-3);
+		font-size: var(--font-size-3);
 		backdrop-filter: blur(100px);
 	}
 </style>

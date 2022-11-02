@@ -11,7 +11,7 @@
 	.error {
 		height: 100vh;
 		display: grid;
-		gap: var(--spacing-32);
+		gap: var(--size-4);
 		place-content: center;
 		place-items: center;
 	}

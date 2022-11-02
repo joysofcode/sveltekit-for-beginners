@@ -54,21 +54,21 @@
 
 	ul {
 		display: grid;
-		gap: var(--spacing-8);
-		font-size: var(--font-18);
+		gap: var(--size-1);
+		font-size: var(--font-size-2);
 	}
 
 	li a {
 		display: inline-flex;
 		align-items: center;
-		gap: var(--spacing-16);
+		gap: var(--size-2);
 		padding: 1.4rem;
-		border-radius: var(--radius-base);
+		border-radius: var(--radius-1);
 		transition: all 0.2s ease;
 	}
 
 	li a:hover {
-		background-color: var(--color-link-hover);
+		background-color: var(--black-3);
 	}
 
 	li.active {
@@ -76,7 +76,7 @@
 	}
 
 	.logo {
-		font-size: var(--font-32);
+		font-size: var(--font-size-4);
 	}
 
 	span {
@@ -89,12 +89,12 @@
 	}
 
 	.tweet:hover {
-		background-color: var(--color-btn-primary-active-hover);
+		background-color: var(--blue-1);
 	}
 
 	@media (min-width: 1024px) {
 		aside {
-			padding: 0 var(--spacing-32);
+			padding: 0 var(--size-4);
 		}
 
 		span {
@@ -104,7 +104,7 @@
 		.tweet {
 			width: 100%;
 			display: block;
-			margin-top: var(--spacing-16);
+			margin-top: var(--size-2);
 		}
 	}
 </style>

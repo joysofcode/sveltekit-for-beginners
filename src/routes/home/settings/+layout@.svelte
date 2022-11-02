@@ -64,8 +64,8 @@
 	.settings {
 		display: grid;
 		grid-auto-rows: min-content;
-		gap: var(--spacing-24);
-		border: 1px solid var(--color-border-primary);
+		gap: var(--size-3);
+		border: 1px solid var(--gray-2);
 		border-top: none;
 		border-bottom: none;
 	}
@@ -76,31 +76,31 @@
 	}
 
 	h1 {
-		font-size: var(--font-18);
-		margin-top: var(--spacing-24);
-		padding: 0 var(--spacing-16);
+		font-size: var(--font-size-2);
+		margin-top: var(--size-3);
+		padding: 0 var(--size-2);
 	}
 
 	h2 {
-		font-size: var(--font-24);
-		padding: 0 var(--spacing-16);
+		font-size: var(--font-size-3);
+		padding: 0 var(--size-2);
 	}
 
 	h2 {
-		margin-bottom: var(--spacing-16);
+		margin-bottom: var(--size-2);
 	}
 
 	a {
-		padding: 1.4rem var(--spacing-16);
+		padding: 1.4rem var(--size-2);
 	}
 
 	.active {
-		background: var(--color-link-hover);
+		background: var(--black-3);
 	}
 
 	aside {
 		display: none;
-		padding: var(--spacing-16);
+		padding: var(--size-2);
 	}
 
 	@media (min-width: 1024px) {

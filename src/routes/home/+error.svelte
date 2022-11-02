@@ -10,8 +10,8 @@
 <style>
 	.error {
 		display: grid;
-		gap: var(--spacing-32);
-		padding: var(--spacing-24) var(--spacing-32);
+		gap: var(--size-4);
+		padding: var(--size-3) var(--size-4);
 		place-items: center;
 	}
 
