@@ -19,11 +19,11 @@
 
 <style>
 	.container {
-		height: 100vh;
-		max-width: min-content;
-		margin: 0 auto;
 		display: grid;
 		grid-template-columns: min-content 50ch;
+		margin: 0 auto;
+		max-width: min-content;
+		height: 100vh;
 	}
 
 	.feed {
@@ -34,9 +34,9 @@
 
 	@media (min-width: 1024px) {
 		.container {
-			max-width: 1240px;
-			margin: 0 auto;
 			grid-template-columns: 1fr 50ch 1fr;
+			margin: 0 auto;
+			max-width: 1240px;
 		}
 	}
 </style>

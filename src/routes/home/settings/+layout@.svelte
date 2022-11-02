@@ -54,11 +54,11 @@
 
 <style>
 	.container {
-		height: 100vh;
-		max-width: min-content;
-		margin: 0 auto;
 		display: grid;
 		grid-template-columns: min-content 50ch;
+		margin: 0 auto;
+		max-width: min-content;
+		height: 100vh;
 	}
 
 	.settings {
@@ -76,14 +76,14 @@
 	}
 
 	h1 {
-		font-size: var(--font-size-2);
 		margin-top: var(--size-3);
 		padding: 0 var(--size-2);
+		font-size: var(--font-size-2);
 	}
 
 	h2 {
-		font-size: var(--font-size-3);
 		padding: 0 var(--size-2);
+		font-size: var(--font-size-3);
 	}
 
 	h2 {
@@ -105,15 +105,14 @@
 
 	@media (min-width: 1024px) {
 		.container {
-			max-width: 1240px;
-			margin: 0 auto;
 			grid-template-columns: 1fr 50ch 1fr;
+			margin: 0 auto;
+			max-width: 1240px;
 		}
 
 		aside {
-			/* forgive me father, I'm lazy */
-			width: 400px;
 			display: block;
+			width: 400px;
 		}
 	}
 </style>

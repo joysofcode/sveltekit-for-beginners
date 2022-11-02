@@ -10,15 +10,15 @@
 <style>
 	.error {
 		display: grid;
+		place-items: center;
 		gap: var(--size-4);
 		padding: var(--size-3) var(--size-4);
-		place-items: center;
 	}
 
 	img {
+		border-radius: 50%;
 		width: 200px;
 		height: 200px;
-		border-radius: 50%;
 		object-fit: cover;
 	}
 </style>

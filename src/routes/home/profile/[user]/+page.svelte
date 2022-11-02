@@ -48,25 +48,25 @@
 <style>
 	.profile {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: 200px 60px;
+		grid-template-columns: repeat(4, 1fr);
 	}
 
 	.banner {
-		grid-column: 1 / -1;
 		grid-row: 1 / 2;
+		grid-column: 1 / -1;
 	}
 
 	.avatar {
-		grid-column: 1 / 2;
 		grid-row: 1 / -1;
+		grid-column: 1 / 2;
 		place-self: center;
 		align-self: flex-end;
+		margin: 0 var(--size-2);
+		border: 4px solid var(--black-1);
+		border-radius: 50%;
 		width: 120px;
 		height: 120px;
-		margin: 0 var(--size-2);
-		border-radius: 50%;
-		border: 4px solid var(--black-1);
 	}
 
 	img {
@@ -87,8 +87,8 @@
 	}
 
 	.name {
-		font-size: var(--font-size-3);
 		font-weight: 700;
+		font-size: var(--font-size-3);
 		text-transform: capitalize;
 	}
 
@@ -104,20 +104,20 @@
 	}
 
 	a {
-		padding: var(--size-2) var(--size-4);
-		font-size: var(--font-size-1);
-		color: var(--gray-1);
-		border-bottom: 4px solid transparent;
 		transition: all 0.2s;
+		border-bottom: 4px solid transparent;
+		padding: var(--size-2) var(--size-4);
+		color: var(--gray-1);
+		font-size: var(--font-size-1);
 	}
 
 	a:hover {
-		background-color: var(--black-3);
 		border-bottom: 4px solid var(--blue-0);
+		background-color: var(--black-3);
 	}
 
 	.active {
-		font-weight: 700;
 		border-bottom: 4px solid var(--blue-0);
+		font-weight: 700;
 	}
 </style>

@@ -23,8 +23,8 @@
 
 <style>
 	.container {
-		height: 100vh;
 		display: grid;
+		height: 100vh;
 	}
 
 	.hero,
@@ -39,17 +39,17 @@
 	}
 
 	.title {
-		font-size: var(--font-size-5);
 		z-index: 2;
+		font-size: var(--font-size-5);
 	}
 
 	.text {
-		padding: var(--size-2);
 		transform: rotate(2deg) translateY(-40%);
+		z-index: 1;
 		background: var(--black-1);
+		padding: var(--size-2);
 		font-weight: bold;
 		font-size: var(--font-size-3);
-		z-index: 1;
 	}
 
 	@media (min-width: 1024px) {

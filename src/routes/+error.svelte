@@ -9,17 +9,17 @@
 
 <style>
 	.error {
-		height: 100vh;
 		display: grid;
-		gap: var(--size-4);
 		place-content: center;
 		place-items: center;
+		gap: var(--size-4);
+		height: 100vh;
 	}
 
 	img {
+		border-radius: 50%;
 		width: 200px;
 		height: 200px;
-		border-radius: 50%;
 		object-fit: cover;
 	}
 </style>
