@@ -1,6 +1,10 @@
 # SvelteKit For Beginners
 
+✍️ https://joyofcode.xyz/sveltekit-for-beginners
+
 Learn full stack web development with SvelteKit.
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/joysofcode/sveltekit-for-beginners)
 
 ## Project Setup
 
