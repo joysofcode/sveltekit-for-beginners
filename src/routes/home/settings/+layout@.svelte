@@ -9,7 +9,6 @@
 
 <div class="container">
 	<Navigation />
-
 	<main class="settings">
 		<h1 class="title">Settings</h1>
 
@@ -55,18 +54,18 @@
 
 <style>
 	.container {
+		height: 100vh;
+		max-width: min-content;
+		margin: 0 auto;
 		display: grid;
 		grid-template-columns: min-content 50ch;
-		max-width: min-content;
-		height: 100vh;
-		margin: 0 auto;
 	}
 
 	.settings {
 		display: grid;
 		grid-auto-rows: min-content;
-		gap: var(--size-3);
-		border: 1px solid var(--gray-2);
+		gap: var(--spacing-24);
+		border: 1px solid var(--color-border-primary);
 		border-top: none;
 		border-bottom: none;
 	}
@@ -77,43 +76,44 @@
 	}
 
 	h1 {
-		margin-top: var(--size-3);
-		padding: 0 var(--size-2);
-		font-size: var(--font-size-2);
+		font-size: var(--font-18);
+		margin-top: var(--spacing-24);
+		padding: 0 var(--spacing-16);
 	}
 
 	h2 {
-		padding: 0 var(--size-2);
-		font-size: var(--font-size-3);
+		font-size: var(--font-24);
+		padding: 0 var(--spacing-16);
 	}
 
 	h2 {
-		margin-bottom: var(--size-2);
+		margin-bottom: var(--spacing-16);
 	}
 
 	a {
-		padding: 1.4rem var(--size-2);
+		padding: 1.4rem var(--spacing-16);
 	}
 
 	.active {
-		background: var(--black-3);
+		background: var(--color-link-hover);
 	}
 
 	aside {
 		display: none;
-		padding: var(--size-2);
+		padding: var(--spacing-16);
 	}
 
 	@media (min-width: 1024px) {
 		.container {
-			grid-template-columns: 1fr 50ch 1fr;
 			max-width: 1240px;
 			margin: 0 auto;
+			grid-template-columns: 1fr 50ch 1fr;
 		}
 
 		aside {
-			display: block;
+			/* forgive me father, I'm lazy */
 			width: 400px;
+			display: block;
 		}
 	}
 </style>

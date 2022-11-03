@@ -48,25 +48,25 @@
 <style>
 	.profile {
 		display: grid;
-		grid-template-rows: 200px 60px;
 		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 200px 60px;
 	}
 
 	.banner {
-		grid-row: 1 / 2;
 		grid-column: 1 / -1;
+		grid-row: 1 / 2;
 	}
 
 	.avatar {
-		grid-row: 1 / -1;
 		grid-column: 1 / 2;
+		grid-row: 1 / -1;
 		place-self: center;
 		align-self: flex-end;
 		width: 120px;
 		height: 120px;
-		margin: 0 var(--size-2);
-		border: 4px solid var(--black-1);
+		margin: 0 var(--spacing-16);
 		border-radius: 50%;
+		border: 4px solid var(--color-bg-primary);
 	}
 
 	img {
@@ -77,9 +77,9 @@
 
 	.content {
 		display: grid;
-		margin-top: var(--size-2);
-		padding: 0 var(--size-2);
-		gap: var(--size-2);
+		gap: var(--spacing-16);
+		margin-top: var(--spacing-16);
+		padding: 0 var(--spacing-16);
 	}
 
 	.user {
@@ -87,37 +87,37 @@
 	}
 
 	.name {
+		font-size: var(--font-24);
 		font-weight: 700;
-		font-size: var(--font-size-3);
 		text-transform: capitalize;
 	}
 
 	.handle {
-		color: var(--gray-1);
+		color: var(--color-text-muted);
 	}
 
 	nav {
 		display: flex;
 		justify-content: center;
-		margin-top: var(--size-4);
-		border-bottom: 1px solid var(--gray-2);
+		margin-top: var(--spacing-32);
+		border-bottom: 1px solid var(--color-border-primary);
 	}
 
 	a {
-		padding: var(--size-2) var(--size-4);
+		padding: var(--spacing-16) var(--spacing-32);
+		font-size: var(--font-16);
+		color: var(--color-text-muted);
 		border-bottom: 4px solid transparent;
-		color: var(--gray-1);
-		font-size: var(--font-size-1);
 		transition: all 0.2s;
 	}
 
 	a:hover {
-		border-bottom: 4px solid var(--blue-0);
-		background-color: var(--black-3);
+		background-color: var(--color-link-hover);
+		border-bottom: 4px solid var(--color-brand);
 	}
 
 	.active {
-		border-bottom: 4px solid var(--blue-0);
 		font-weight: 700;
+		border-bottom: 4px solid var(--color-brand);
 	}
 </style>

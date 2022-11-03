@@ -30,30 +30,30 @@
 	section {
 		display: flex;
 		flex-direction: column;
+		gap: var(--spacing-24);
 		padding: 2rem;
-		gap: var(--size-3);
-		border: 1px solid var(--gray-2);
-		border-radius: var(--radius-1);
-		background-color: var(--black-2);
+		background-color: var(--color-bg-secondary);
+		border: 1px solid var(--color-border-primary);
+		border-radius: var(--radius-base);
 	}
 
 	h2 {
-		font-size: var(--font-size-2);
+		font-size: var(--font-18);
 	}
 
 	a {
+		font-size: var(--font-16);
 		color: hsl(204, 88%, 53%);
-		font-size: var(--font-size-1);
 	}
 
 	@media (min-width: 1024px) {
 		.container {
+			width: 400px;
 			display: flex;
 			flex-direction: column;
-			width: 400px;
-			margin-top: var(--size-2);
-			padding: 0 var(--size-4);
-			gap: var(--size-2);
+			gap: var(--spacing-16);
+			margin-top: var(--spacing-16);
+			padding: 0 var(--spacing-32);
 		}
 	}
 </style>

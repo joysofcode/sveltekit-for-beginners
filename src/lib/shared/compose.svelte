@@ -46,9 +46,9 @@
 		display: grid;
 		grid-template-columns: min-content 1fr;
 		align-items: center;
-		padding: var(--size-2) var(--size-3);
-		gap: var(--size-2);
-		border-bottom: 1px solid var(--gray-2);
+		gap: var(--spacing-16);
+		padding: var(--spacing-16) var(--spacing-24);
+		border-bottom: 1px solid var(--color-border-primary);
 	}
 
 	img {
@@ -60,18 +60,18 @@
 	form {
 		display: flex;
 		align-items: center;
-		gap: var(--size-2);
+		gap: var(--spacing-16);
 	}
 
 	input {
+		color: var(--color-text-primary);
 		background-color: transparent;
-		color: var(--white-0);
 	}
 
 	button {
 		min-width: 80px;
-		padding: var(--size-2);
-		font-size: var(--font-size-1);
+		font-size: var(--font-16);
+		padding: var(--spacing-16);
 	}
 
 	.error {

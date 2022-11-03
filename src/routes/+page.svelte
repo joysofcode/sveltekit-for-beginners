@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { fly } from 'svelte/transition'
 </script>
 
@@ -23,8 +23,8 @@
 
 <style>
 	.container {
-		display: grid;
 		height: 100vh;
+		display: grid;
 	}
 
 	.hero,
@@ -34,22 +34,22 @@
 	}
 
 	.hero {
-		background-color: var(--blue-0);
+		background-color: var(--color-brand);
 		text-align: center;
 	}
 
 	.title {
+		font-size: var(--font-80);
 		z-index: 2;
-		font-size: var(--font-size-5);
 	}
 
 	.text {
-		z-index: 1;
-		padding: var(--size-2);
+		padding: var(--spacing-16);
 		transform: rotate(2deg) translateY(-40%);
-		background: var(--black-1);
+		background: var(--color-bg-primary);
 		font-weight: bold;
-		font-size: var(--font-size-3);
+		font-size: var(--font-24);
+		z-index: 1;
 	}
 
 	@media (min-width: 1024px) {
