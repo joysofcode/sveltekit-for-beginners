@@ -46,8 +46,8 @@
 		display: grid;
 		grid-template-columns: min-content 1fr;
 		align-items: center;
-		gap: var(--size-2);
 		padding: var(--size-2) var(--size-3);
+		gap: var(--size-2);
 		border-bottom: 1px solid var(--gray-2);
 	}
 
@@ -64,14 +64,14 @@
 	}
 
 	input {
-		color: var(--white-0);
 		background-color: transparent;
+		color: var(--white-0);
 	}
 
 	button {
 		min-width: 80px;
-		font-size: var(--font-size-1);
 		padding: var(--size-2);
+		font-size: var(--font-size-1);
 	}
 
 	.error {

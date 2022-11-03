@@ -62,11 +62,11 @@
 		grid-column: 1 / 2;
 		place-self: center;
 		align-self: flex-end;
+		width: 120px;
+		height: 120px;
 		margin: 0 var(--size-2);
 		border: 4px solid var(--black-1);
 		border-radius: 50%;
-		width: 120px;
-		height: 120px;
 	}
 
 	img {
@@ -77,9 +77,9 @@
 
 	.content {
 		display: grid;
-		gap: var(--size-2);
 		margin-top: var(--size-2);
 		padding: 0 var(--size-2);
+		gap: var(--size-2);
 	}
 
 	.user {
@@ -104,11 +104,11 @@
 	}
 
 	a {
-		transition: all 0.2s;
-		border-bottom: 4px solid transparent;
 		padding: var(--size-2) var(--size-4);
+		border-bottom: 4px solid transparent;
 		color: var(--gray-1);
 		font-size: var(--font-size-1);
+		transition: all 0.2s;
 	}
 
 	a:hover {

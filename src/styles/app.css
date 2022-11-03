@@ -82,21 +82,21 @@ label {
 }
 
 input {
+	padding: var(--size-2);
 	border: none;
 	border-radius: var(--radius-1);
-	padding: var(--size-2);
 	font-size: var(--font-size-3);
 }
 
 .btn {
-	cursor: pointer;
+	padding: var(--size-2) var(--size-4);
 	border: none;
 	border-radius: var(--radius-1);
 	background-color: var(--blue-0);
-	padding: var(--size-2) var(--size-4);
 	color: var(--white-0);
 	font-weight: bold;
 	font-size: var(--font-size-2);
+	cursor: pointer;
 }
 
 .btn:hover {
@@ -104,9 +104,9 @@ input {
 }
 
 .btn:disabled {
-	cursor: not-allowed;
 	background-color: var(--blue-2);
 	color: var(--gray-1);
+	cursor: not-allowed;
 }
 
 ul,
@@ -119,13 +119,13 @@ ol {
 */
 
 .responsive {
-	border: 1px solid hsl(0 0% 0%);
 	overflow: scroll;
+	border: 1px solid hsl(0 0% 0%);
 	resize: both;
 }
 
 .placeholder {
+	padding: var(--size-3) 0;
 	border-radius: var(--radius-1);
 	background-color: var(--gray-1);
-	padding: var(--size-3) 0;
 }

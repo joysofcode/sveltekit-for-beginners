@@ -111,8 +111,8 @@
 	}
 
 	button {
-		font-size: var(--font-size-1);
 		padding: var(--size-2);
+		font-size: var(--font-size-1);
 	}
 
 	.tweet-container:hover {
@@ -122,8 +122,8 @@
 	.tweet-container {
 		display: grid;
 		grid-template-columns: min-content 1fr;
-		gap: var(--size-2);
 		padding: var(--size-2) var(--size-3);
+		gap: var(--size-2);
 		transition: all 0.3s;
 	}
 
@@ -147,8 +147,8 @@
 
 	.handle,
 	.posted {
-		font-size: var(--font-size-1);
 		color: var(--gray-1);
+		font-size: var(--font-size-1);
 	}
 
 	.content {
@@ -157,31 +157,31 @@
 
 	.actions {
 		display: flex;
-		gap: var(--size-4);
 		margin-top: var(--size-2);
+		gap: var(--size-4);
 	}
 
 	.actions button,
 	.actions a {
 		padding: 0;
-		color: var(--gray-1);
 		background: none;
+		color: var(--gray-1);
 		transition: all 0.3s;
 	}
 
 	.circle {
-		width: 24px;
-		height: 24px;
 		display: grid;
 		place-content: center;
+		width: 24px;
+		height: 24px;
 		padding: var(--size-2);
 		border-radius: 50%;
 		transition: all 0.3s;
 	}
 
 	.circle > :global(.liked) {
-		color: hsl(9 100% 64%);
 		fill: hsl(9 100% 64%);
+		color: hsl(9 100% 64%);
 	}
 
 	.like {
@@ -221,8 +221,8 @@
 
 	.count {
 		margin-left: var(--size-2);
-		font-size: 1.4rem;
-		font-weight: 400;
 		overflow: hidden;
+		font-weight: 400;
+		font-size: 1.4rem;
 	}
 </style>

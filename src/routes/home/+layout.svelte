@@ -21,9 +21,9 @@
 	.container {
 		display: grid;
 		grid-template-columns: min-content 50ch;
-		margin: 0 auto;
 		max-width: min-content;
 		height: 100vh;
+		margin: 0 auto;
 	}
 
 	.feed {
@@ -35,8 +35,8 @@
 	@media (min-width: 1024px) {
 		.container {
 			grid-template-columns: 1fr 50ch 1fr;
-			margin: 0 auto;
 			max-width: 1240px;
+			margin: 0 auto;
 		}
 	}
 </style>

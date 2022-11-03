@@ -61,8 +61,8 @@
 	li a {
 		display: inline-flex;
 		align-items: center;
-		gap: var(--size-2);
 		padding: 1.4rem;
+		gap: var(--size-2);
 		border-radius: var(--radius-1);
 		transition: all 0.2s ease;
 	}
@@ -102,8 +102,8 @@
 		}
 
 		.tweet {
-			width: 100%;
 			display: block;
+			width: 100%;
 			margin-top: var(--size-2);
 		}
 	}

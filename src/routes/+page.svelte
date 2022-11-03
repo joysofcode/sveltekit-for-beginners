@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fly } from 'svelte/transition'
 </script>
 
@@ -44,10 +44,10 @@
 	}
 
 	.text {
-		transform: rotate(2deg) translateY(-40%);
 		z-index: 1;
-		background: var(--black-1);
 		padding: var(--size-2);
+		transform: rotate(2deg) translateY(-40%);
+		background: var(--black-1);
 		font-weight: bold;
 		font-size: var(--font-size-3);
 	}

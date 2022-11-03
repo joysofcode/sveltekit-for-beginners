@@ -24,8 +24,8 @@
 
 	.container {
 		display: grid;
-		gap: var(--size-1);
 		padding: var(--size-2);
+		gap: var(--size-1);
 	}
 
 	.content {

@@ -30,11 +30,11 @@
 	section {
 		display: flex;
 		flex-direction: column;
-		gap: var(--size-3);
 		padding: 2rem;
-		background-color: var(--black-2);
+		gap: var(--size-3);
 		border: 1px solid var(--gray-2);
 		border-radius: var(--radius-1);
+		background-color: var(--black-2);
 	}
 
 	h2 {
@@ -42,18 +42,18 @@
 	}
 
 	a {
-		font-size: var(--font-size-1);
 		color: hsl(204, 88%, 53%);
+		font-size: var(--font-size-1);
 	}
 
 	@media (min-width: 1024px) {
 		.container {
-			width: 400px;
 			display: flex;
 			flex-direction: column;
-			gap: var(--size-2);
+			width: 400px;
 			margin-top: var(--size-2);
 			padding: 0 var(--size-4);
+			gap: var(--size-2);
 		}
 	}
 </style>
